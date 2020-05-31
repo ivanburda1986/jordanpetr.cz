@@ -1,0 +1,8 @@
+-Gallery: opening in an overlay instead of a _blank page
+-Map size: bigger for the big screen
+-Deploy with netlify
+
+-A deer antlers png image at the top of the page --DONE
+-Place the ICO into the contact --DONE
+-Add a copyright with a dynamic year to the footer, also a link directing to the creator's website --DONE
+-Favico --DONE

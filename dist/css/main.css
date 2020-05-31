@@ -1,6 +1,379 @@
+:root {
+  --main-light-green: #e7e8a6;
+  --main-green: #5c6b28;
+  --main-dark-green: #141c11;
+  --main-brown: #8c4511;
+  --main-amber: #da9432; }
+
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  /*min-width: 600px;*/ }
+
+img {
+  display: block; }
+
+a {
+  text-decoration: none; }
+
+a:visited {
+  text-decoration: none; }
 
 body {
-  background: pink; }
+  display: flex;
+  flex-direction: column; }
+
+/*Navigation styling*/
+#navbar {
+  position: fixed; }
+
+#logo-container {
+  display: flex;
+  margin: 0;
+  width: 125px;
+  height: auto;
+  margin-left: 50vw;
+  margin-right: 50vw; }
+
+#logo {
+  width: 100px;
+  height: auto; }
+  #logo img {
+    width: 100%;
+    height: 100%; }
+
+ul {
+  list-style: none; }
+
+.nav {
+  background-color: var(--main-green);
+  width: 100vw;
+  padding-right: 2em;
+  height: 75px;
+  min-height: 75px; }
+
+#navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end; }
+
+#navbar a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  padding: 1em 2em; }
+
+#navbar a:hover {
+  background-color: var(--main-dark-green); }
+
+/*Welcome section styling*/
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  height: auto;
+  background-color: var(--main-dark-green); }
+
+#welcome-section-header h1 {
+  font-size: 4em;
+  color: var(--main-light-green); }
+
+#welcome-section-header h2 {
+  font-size: 2em;
+  font-style: italic;
+  color: var(--main-amber); }
+
+#welcome-section-header h3 {
+  padding-top: 1em;
+  font-size: 1em;
+  color: var(--main-light-green); }
+
+#pricelist {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: var(--main-light-green); }
+
+#pricelist p {
+  padding: 5px 5px;
+  font-size: 1.5em; }
+
+#priceItems {
+  text-align: left;
+  min-width: 100px;
+  width: 200px; }
+
+#prices {
+  text-align: right; }
+
+#moreOffers {
+  max-width: 700px;
+  margin-bottom: 1rem; }
+
+#moreOffers-title {
+  padding: 5px 5px;
+  font-size: 1.5em;
+  font-style: italic;
+  color: var(--main-amber); }
+
+#moreOffers p {
+  padding: 5px 5px;
+  font-size: 1.2em;
+  text-align: center;
+  color: var(--main-light-green); }
+
+/*Project section styling*/
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--main-brown);
+  min-height: 100vh;
+  height: auto;
+  padding: 2rem 2rem; }
+
+#project-section-header {
+  /*max-width: 640px;*/
+  max-width: 640px;
+  margin: 2rem auto 1rem auto;
+  color: var(--main-light-green);
+  font-size: 2em; }
+
+#project-section-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-gap: 2rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  grid-template-rows: minmax(100px); }
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  font-size: 1.3rem;
+  background-color: var(--main-dark-green);
+  color: var(--main-light-green);
+  text-align: center;
+  text-decoration: none;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: linear; }
+
+.project-image {
+  height: calc(100% - 6.8rem);
+  min-height: 220px;
+  max-height: 280px;
+  width: 100%;
+  object-fit: cover; }
+
+.project-tile p {
+  margin: 1rem auto 1rem auto; }
+
+/*Contact section styling*/
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  height: auto;
+  background-color: var(--main-dark-green); }
+
+#contact h1 {
+  font-size: 4em;
+  color: var(--main-light-green); }
+
+#contact h3 {
+  font-size: 1.5em;
+  font-style: italic;
+  color: var(--main-amber); }
+
+#contact ul {
+  padding-top: 3em;
+  display: flex;
+  flex-direction: row; }
+
+.contact-link {
+  text-decoration: none;
+  color: var(--main-light-green);
+  font-size: 1.5em;
+  padding: 2em 1em;
+  margin: 0;
+  text-shadow: 2px 2px 1px black;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: linear; }
+
+.fas,
+.fab {
+  padding-right: 8px; }
+
+.contact-link:hover {
+  top: 15px; }
+
+#mapa-container {
+  padding-top: 3em;
+  padding-bottom: 1em; }
+
+#mapa {
+  min-width: 320px;
+  max-width: 600px;
+  min-height: 240px;
+  max-height: 400px; }
+
+/*Footer section styling*/
+/*Footer section styling*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--main-dark-green);
+  border-top: 3px solid var(--main-green);
+  min-height: 50px;
+  height: 100px; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background: var(--main-dark-green);
+  border-top: 3px solid var(--main-green);
+  min-height: 50px;
+  height: 100px;
+  width: 100vw;
+  align-items: center;
+  justify-items: center;
+  text-align: center; }
+  footer div {
+    margin: auto; }
+    footer div p {
+      font-size: 1.2rem;
+      padding: 0rem 1.5rem;
+      color: var(--main-light-green);
+      padding: 10px 20px;
+      margin: auto; }
+
+/*Media queries for various screen sizes*/
+@media screen and (max-width: 1310px) {
+  #project-section-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  .project-image {
+    min-height: 220px;
+    max-height: 220px; } }
+
+@media screen and (max-width: 1050px) {
+  #project-section-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  .project-image {
+    min-height: 200px;
+    max-height: 200px; }
+  .project-tile p {
+    margin: 0.5rem auto 0.5rem auto; }
+  #contact h1 {
+    font-size: 3em; }
+  #contact h2 {
+    font-size: 1.5em; }
+  .contact-link {
+    font-size: 1em;
+    padding: 0.5em 0.5em; }
+  #contact ul {
+    padding-top: 1.5em; }
+  footer p {
+    font-size: 1em; } }
+
+@media screen and (max-width: 975px) {
+  #navbar ul {
+    justify-content: space-evenly; }
+  #navbar a {
+    padding: 0.2em 0.5em; }
+  #project-section-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
+  .project-image {
+    min-height: 190px;
+    max-height: 190px; } }
+
+@media screen and (max-width: 930px) {
+  #project-section-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); }
+  .project-image {
+    min-height: 170px;
+    max-height: 170px; } }
+
+@media screen and (max-width: 650px) {
+  #project-section-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+  .project-image {
+    min-height: 150px;
+    max-height: 150px; }
+  .project-tile p {
+    margin: 0.5rem auto 0.5rem auto; }
+  #showAllButton {
+    font-size: 1em; }
+  .project-tile {
+    font-size: 1em; } }
+
+#contact ul {
+  flex-direction: column; }
+  #contact ul li {
+    margin-bottom: 1rem; }
+
+.contact-link:hover {
+  top: 0px; }
+
+@media screen and (max-width: 360px) {
+  .nav {
+    padding-right: 0em; }
+  #navbar a {
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 0.5em 1em; }
+  #welcome-section-header h1 {
+    font-size: 3em; }
+  #welcome-section-header h2 {
+    font-size: 1.5em; }
+  #project-section-header h1 {
+    font-size: 1.5em; }
+  #projects {
+    padding: 1rem 2rem; }
+  #project-section-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+    margin-bottom: 0.5em; }
+  .project-image {
+    min-height: 130px;
+    max-height: 130px; }
+  .project-tile {
+    font-size: 1rem; }
+  #showAllButton {
+    font-size: 1em;
+    width: 120px; }
+  #contact-section-header h1 {
+    font-size: 3em; }
+  #contact-section-header h3 {
+    font-size: 1.25em; }
+  #mapa {
+    min-width: 310px;
+    max-width: 600px;
+    min-height: 240px;
+    max-height: 400px; } }
