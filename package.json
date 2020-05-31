@@ -1,0 +1,23 @@
+{
+  "name": "petrJordan.cz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanburda1986/jordanpetr.cz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivanburda1986/jordanpetr.cz/issues"
+  },
+  "homepage": "https://github.com/ivanburda1986/jordanpetr.cz#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
