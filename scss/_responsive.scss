@@ -25,13 +25,6 @@
 
 @include width-max-1024 {
 
-  //General
-  .container {
-    max-width: 85vw;
-    margin-left: 7.5vw;
-    margin-right: 7.5vw;
-  }
-
   //Section styling
   .section-headline {
     width: 100%;
@@ -57,7 +50,7 @@
   //GALLERY
   #gallery-overview {
     .gallery-thumbnail {
-      height: 175px;
+      height: 250px;
     }
   }
 }
@@ -97,5 +90,9 @@
   //Section styling
   .section-headline {
     width: 100%;
+  }
+
+  #gallery-overview {
+    grid-template-columns: 1fr;
   }
 }

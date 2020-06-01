@@ -14,6 +14,7 @@ class galleryUI {
       <div class="gallery-thumbnail" value="${photos.indexOf(photo)}">
       <img src="img/gallery/thumbnails/${photo}" alt="${photo}" id="${photo}"
       />
+      <div class="thumbnail-description"><p>${descriptions[photos.indexOf(photo)]}</p></div>
       </div>
       `
     });

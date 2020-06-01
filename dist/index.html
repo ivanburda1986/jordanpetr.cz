@@ -107,136 +107,27 @@
           <h1>Ukázka</h1>
         </header>
         <div id="project-section-gallery">
-          <a
-            href="img/1.jpg"
-            title="Otevři v novém okně"
-            target="_blank"
-            class="project-tile"
-          >
-            <img src="img/1.jpg" alt="popisObrazku" class="project-image" />
-            <p class="project-tile">Srnci</p>
-          </a>
-
-          <a
-            href="img/2.jpg"
-            title="Otevři v novém okně"
-            target="_blank"
-            class="project-tile"
-          >
-            <img src="img/2.jpg" alt="Jelen" class="project-image" />
-            <p class="project-tile">Jelen</p>
-          </a>
-
-          <a
-            href="img/3.jpg"
-            title="Otevři v novém okně"
-            target="_blank"
-            class="project-tile"
-          >
-            <img src="img/3.jpg" alt="Rarity - srnci" class="project-image" />
-            <p class="project-tile">Rarity - srnci</p>
-          </a>
-
-          <a
-            href="img/4.jpg"
-            title="Otevři v novém okně"
-            target="_blank"
-            class="project-tile"
-          >
-            <img src="img/4.jpg" alt="Srnec" class="project-image" />
-            <p class="project-tile">Srnec</p>
-          </a>
-
-          <a
-            href="img/5.jpg"
-            title="Otevři v novém okně"
-            target="_blank"
-            class="project-tile"
-          >
-            <img src="img/5.jpg" alt="Srnec s lýčím" class="project-image" />
-            <p class="project-tile">Srnec s lýčím</p>
-          </a>
-
-          <a
-            href="img/6.jpg"
-            title="Otevři v novém okně"
-            target="_blank"
-            class="project-tile"
-          >
-            <img src="img/6.jpg" alt="Muflon" class="project-image" />
-            <div class="project-tile-text">
-              <p class="project-tile">Muflon</p>
+          <!--Gallery-->
+          <section id="section-gallery" class="section">
+            <!--Gallery overlay-->
+            <div id="gallery-overlay">
+              <button id="gallery-hide-btn" class="overlay-hide-btn">×</button>
+              <button id="gallery-previous-btn" class="overlay-btn">
+                <i class="fas fa-chevron-left fa-3x"></i>
+              </button>
+              <button id="gallery-next-btn" class="overlay-btn">
+                <i class="fas fa-chevron-right fa-3x"></i>
+              </button>
+              <div id="gallery-full-photo-container"></div>
+              <div id="gallery-full-photo-description"></div>
             </div>
-          </a>
-
-          <a
-            href="img/7.jpg"
-            title="Otevři v novém okně"
-            target="_blank"
-            class="project-tile"
-          >
-            <img src="img/7.jpg" alt="Lebka" class="project-image" />
-            <p class="project-tile">Lebka</p>
-          </a>
-
-          <a
-            href="img/8.jpg"
-            title="Otevři v novém okně"
-            target="_blank"
-            class="project-tile"
-          >
-            <img src="img/8.jpg" alt="Jelen" class="project-image" />
-            <p class="project-tile">Jelen</p>
-          </a>
-
-          <a
-            href="img/9.jpg"
-            title="Otevři v novém okně"
-            target="_blank"
-            class="project-tile"
-          >
-            <img src="img/9.jpg" alt="Věšák" class="project-image" />
-            <p class="project-tile">Věšák</p>
-          </a>
-
-          <a
-            href="img/10.jpg"
-            title="Otevři v novém okně"
-            target="_blank"
-            class="project-tile"
-          >
-            <img src="img/10.jpg" alt="Věšák" class="project-image" />
-            <div class="project-tile-text">
-              <p class="project-tile">Věšák</p>
+            <!--Gallery grid-->
+            <div class="container">
+              <div class="content-canvas">
+                <div id="gallery-overview"></div>
+              </div>
             </div>
-          </a>
-        </div>
-      </section>
-      <!--Gallery-->
-      <section id="section-gallery" class="section">
-        <!--Gallery overlay-->
-        <div id="gallery-overlay">
-          <button id="gallery-hide-btn" class="overlay-hide-btn">×</button>
-          <button id="gallery-previous-btn" class="overlay-btn">
-            <i class="fas fa-chevron-left fa-3x"></i>
-          </button>
-          <button id="gallery-next-btn" class="overlay-btn">
-            <i class="fas fa-chevron-right fa-3x"></i>
-          </button>
-          <div id="gallery-full-photo-container"></div>
-          <div id="gallery-full-photo-description"></div>
-        </div>
-        <!--Gallery grid-->
-        <div class="container">
-          <div class="content-canvas">
-            <h1
-              id="gallery-headline"
-              class="anim-opacity-startState section-headline"
-            >
-              Gallery
-            </h1>
-            <div id="gallery-overview"></div>
-          </div>
+          </section>
         </div>
       </section>
 

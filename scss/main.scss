@@ -39,6 +39,7 @@ body {
 /*Navigation styling*/
 #navbar {
   position: fixed;
+  z-index: 2;
 
 }
 
@@ -186,6 +187,7 @@ ul {
   min-height: 100vh;
   height: auto;
   padding: 2rem 2rem;
+
 }
 
 #project-section-header {
@@ -266,12 +268,13 @@ ul {
 
   .gallery-thumbnail {
     width: 100%;
-    height: 250px;
+    height: 300px;
     overflow: hidden;
+    border: 3px solid var(--main-dark-green);
 
     img {
       width: 100%;
-      height: 100%;
+      height: 85%;
       object-fit: cover;
       @include transition-littleTime;
       cursor: pointer;
@@ -282,8 +285,25 @@ ul {
       width: 120%;
       height: 120%;
     }
+
+    .thumbnail-description {
+      display: flex;
+      width: 100%;
+      height: 15%;
+      background: var(--main-dark-green);
+      text-align: center;
+      justify-content: center;
+      vertical-align: middle;
+
+      p {
+        padding-top: 10px;
+        font-size: 1.1rem;
+        color: var(--main-light-green);
+      }
+    }
   }
 }
+
 
 
 
@@ -555,6 +575,7 @@ footer {
 
   #projects {
     padding: 1rem 2rem;
+
   }
 
   #project-section-gallery {
