@@ -15,6 +15,7 @@
 html {
   scroll-behavior: smooth;
   /*min-width: 600px;*/
+  background-color: var(--main-dark-green);
 }
 
 img {
@@ -46,8 +47,8 @@ body {
   margin: 0;
   width: 125px;
   height: auto;
-  margin-left: 50vw;
-  margin-right: 50vw;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -72,8 +73,8 @@ ul {
   background-color: var(--main-green);
   width: 100vw;
   padding-right: 2em;
-  height: 75px;
-  min-height: 75px;
+  height: auto;
+  min-height: auto;
 }
 
 #navbar ul {
@@ -104,6 +105,8 @@ ul {
   min-height: 100vh;
   height: auto;
   background-color: var(--main-dark-green);
+
+  margin-top: 75px;
 }
 
 #welcome-section-header h1 {
@@ -116,6 +119,7 @@ ul {
   font-size: 2em;
   font-style: italic;
   color: var(--main-amber);
+
 }
 
 #welcome-section-header h3 {
@@ -232,6 +236,65 @@ ul {
 }
 
 
+
+
+//Gallery with Overlay
+@import "config";
+@import "utilities";
+@import "gallery";
+
+#section-gallery {
+  @extend %section-shared;
+
+  .content-canvas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    justify-items: center;
+  }
+}
+
+#gallery-overview {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-content: center;
+  grid-gap: 1.5rem;
+  justify-items: center;
+  justify-content: space-between;
+
+  .gallery-thumbnail {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @include transition-littleTime;
+      cursor: pointer;
+    }
+
+    img:hover {
+      transform: translate(-15%, -5%);
+      width: 120%;
+      height: 120%;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
 /*Contact section styling*/
 #contact {
   display: flex;
@@ -300,7 +363,6 @@ ul {
 
 
 /*Footer section styling*/
-/*Footer section styling*/
 footer {
   display: flex;
   flex-direction: row;
@@ -341,6 +403,9 @@ footer {
 }
 
 /*Media queries for various screen sizes*/
+
+@import "responsive";
+
 @media screen and (max-width: 1310px) {
   #project-section-gallery {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));

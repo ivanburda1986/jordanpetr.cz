@@ -1,0 +1,101 @@
+//Responsiveness
+//------------------WIDTHS------------------
+@include width-max-768 {
+
+  //Gallery
+  #section-gallery {
+
+    .content-canvas {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+      justify-items: center;
+    }
+  }
+
+  #gallery-overview {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+}
+
+
+@include width-max-1024 {
+
+  //General
+  .container {
+    max-width: 85vw;
+    margin-left: 7.5vw;
+    margin-right: 7.5vw;
+  }
+
+  //Section styling
+  .section-headline {
+    width: 100%;
+  }
+
+  //Utilities
+  .overlay-hide-btn {
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 3rem;
+    margin-right: 4rem;
+
+    &:hover {
+      font-size: 4rem;
+    }
+  }
+
+  .overlay-hide-btn {
+    margin-right: 2rem;
+  }
+
+
+  //GALLERY
+  #gallery-overview {
+    .gallery-thumbnail {
+      height: 175px;
+    }
+  }
+}
+
+//-----------------HEIGHTS------------------
+
+@include height-max-768 {
+
+  //Section styling
+  %section-shared {
+    padding-top: 2rem;
+  }
+
+  .section-headline {
+    width: 100%;
+  }
+
+}
+
+@include height-min-1080 {
+
+  //Layout
+  .container {
+    max-height: 1080px;
+  }
+
+  //Section styling
+  %section-shared {
+    height: 100%;
+    min-height: 1080px;
+    max-height: 1080px;
+  }
+}
+
+@include width-max-450-height-max-900 {
+
+  //Section styling
+  .section-headline {
+    width: 100%;
+  }
+}

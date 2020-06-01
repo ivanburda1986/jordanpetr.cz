@@ -1,0 +1,70 @@
+/*Container width */
+$website-width: 70vw;
+
+/*Text colors*/
+$textColorLight: #dedede;
+
+
+/*UI Colors*/
+$backgroundTransparent: rgba(0, 0, 0, 0.95);
+$dominantColor: DarkSeaGreen;
+
+
+//Transitions and animations
+@mixin transition-littleTime {
+  transition: all 0.5s ease-in-out;
+}
+
+
+//Width
+@mixin width-max-400 {
+  @media screen and (max-width: 400px) {
+    @content;
+  }
+}
+
+
+@mixin width-max-768 {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin width-min-768 {
+  @media screen and (min-width: 769px) {
+    @content;
+  }
+}
+
+
+@mixin width-max-1024 {
+  @media screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (min-width: 1920) {
+    @content;
+  }
+}
+
+//Height
+@mixin width-max-450-height-max-900 {
+  @media screen and (max-width: 450px) and (max-height: 900px) {
+    @content;
+  }
+}
+
+
+@mixin height-max-768 {
+  @media screen and (max-height: 768px) {
+    @content;
+  }
+}
+
+@mixin height-min-1080 {
+  @media screen and (min-height: 1080px) {
+    @content;
+  }
+}
