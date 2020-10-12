@@ -123,6 +123,10 @@ ul {
 #prices {
   text-align: right; }
 
+#poznamka{
+  color: var(--main-amber);
+}
+
 #moreOffers {
   max-width: 700px;
   margin-bottom: 1rem; }
